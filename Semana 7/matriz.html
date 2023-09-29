@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando uma matriz</title>
+    <script>
+        let matriz = new Array(3); //3 linhas
+        for(let i=0; i<matriz.length; i++){
+            matriz[i] = new Array(3); //3 colunas
+            for(let j=0; j<3; j++){
+                let n = parseInt(Math.random() * 2); // entre 0 e 1
+                if (n==0){
+                    matriz[i][j] = '0';
+                }
+                else{
+                    matriz[i][j] = "x";
+                }
+                console.log("["+i+","+j+"]="+matriz[i][j]);
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

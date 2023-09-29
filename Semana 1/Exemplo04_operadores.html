@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Operadores</title>
+    <script>
+        let x = 5
+        let y = 2
+        let a = x + y
+        let b = x - y
+        let c = x * y
+        let d = x / y
+        let e = y ** x
+        let f = x % y
+    </script>
+</head>
+<body>
+    <h2>Operadores</h2>
+        <button onclick="document.getElementById('Soma').innerHTML = (`Soma: ${x} + ${y} = ${a}`)">A</button>
+        <button onclick="document.getElementById('Subtração').innerHTML = (`Subtração: ${x} - ${y} = ${b}`)">B</button>
+        <button onclick="document.getElementById('Multiplicação').innerHTML = (`Multiplicação: ${x} * ${y} = ${c}`)">C</button>
+        <button onclick="document.getElementById('Divisão').innerHTML = (`Divisão: ${x} / ${y} = ${d}`)">D</button>
+        <button onclick="document.getElementById('Exponenciação').innerHTML = (`Exponenciação: ${y} ** ${x} = ${e}`)">E</button>
+        <button onclick="document.getElementById('Módulo').innerHTML = (`Módulo: ${x} % ${y} = ${f}`)">F</button>
+
+        <button onclick="document.getElementById('Igual').innerHTML = (`Igual: ${x} == ${y} => ${x==y}`)">=</button>
+        <button onclick="document.getElementById('Diferente').innerHTML = (`Diferente: ${x} != ${y} => ${x!=y}`)">!</button>
+        <button onclick="document.getElementById('Maior').innerHTML = (`Maior: ${x} > ${y} => ${x>y}`)">></button>
+        <button onclick="document.getElementById('Menor').innerHTML = (`Menor: ${x} < ${y} => ${x<y}`)"><</button>
+
+        <button onclick="document.getElementById('And').innerHTML = (`And: ${x} > ${y} e ${x} < ${a} => ${x>y && x<a}`)">AND</button>
+        <button onclick="document.getElementById('Or').innerHTML = (`Or: ${y} > ${x} ou ${x} > ${a} => ${y>x || x>a}`)">OR</button>
+
+        <br><br>
+        <p ID="Soma">Soma:</p>
+        <p ID="Subtração">Subtração:</p>
+        <p ID="Multiplicação">Multiplicação:</p>
+        <p ID="Divisão">Divisão:</p>
+        <p ID="Exponenciação">Exponenciação:</p>
+        <p ID="Módulo">Módulo:</p>
+
+        <p ID="Igual">Igual:</p>
+        <p ID="Diferente">Diferente:</p>
+        <p ID="Maior">Maior:</p>
+        <p ID="Menor">Menor:</p>
+
+        <p ID="And">And:</p>
+        <p ID="Or">Or:</p>
+</body>
+</html>

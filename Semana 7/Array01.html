@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do Arrays</title>
+    <script>
+        let semana = new Array(7); //criação
+        semana[0] = 'domingo';
+        semana[1] = 'segunda';
+        semana[2] = 'terça';
+        semana[3] = 'quarta';
+        semana[4] = 'quinta';
+        semana[5] = 'sexta';
+        semana[6] = 'sábado';
+
+        //função que recebe o dia em forma numérica e retorna seu extenso correspondente
+        function mostrarDia(dia){ 
+            let s = "";
+            let hoje = new Date(); // cria um objeto do tipo Date
+            let diaH = hoje.getDate(); // dia do mês atual
+            let mes = hoje.getMonth() + 1;
+            let ano = hoje.getFullYear();
+            let hora = hoje.getHours();
+            let minuto = hoje.getMinutes();
+            let segundo = hoje.getSeconds();
+            s = "dia: " + diaH + "mês: " + mes + ",ano: " + ano + ": " + semana[dia] + "<br>";
+            s += "Hora: " + hora + ",minuto: " + minuto + ", segundo; " + segundo;
+            return s;
+        }
+    </script>
+</head>
+<body>
+    <form name="f">
+        dia:<input type="number" name="dia"><br><br>
+        <input type="button" value="Mostrar"
+        onclick="document.getElementById('saida').innerHTML = mostrarDia(f.dia.value)">
+    </form>
+    <p id="saida"></p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gerar(){
+
+            // declaração de um "objeto"
+            const alunos = [
+            {
+                nome:"Carolina",
+                Idade:18,
+                cidade:"Indaiatuba"
+            },
+            {
+                nome:"Julia",
+                idade:19,
+                cidade:"Indaiatuba"
+            }
+        ];
+
+        console.log(alunos[0].nome);
+        console.log(alunos[1].nome);
+            /*
+            console.log(aluno["nome"]);
+            console.log(aluno["idade"]);
+            console.log(aluno["cidade"]);
+            console.log(aluno.nome);
+            /*
+            console.log(key + " = " + aluno[key]);
+            for(let key in aluno){
+                console.log(key + " = " + aluno[key]);
+            }
+            /*
+            let nomes =["Ana","Bia","Carlos","Denis","Elaine"];
+            let i = 0;
+            do{
+                console.log(nomes[i]);
+                i++;
+            }
+            while(i<=4);
+            /*
+            for(let i=0; i<=4; i++){
+                alert(i + " = " +nomes[i]);
+            }
+    
+            for(let e of nomes){
+                console.log(elefante);
+            }
+            /*let i =1;
+            while(i<=6){
+                document.write("<h" +i+"/>Eu gosto de JavaScript</h"+i+">")
+                i+=1;
+            }
+            document.write("<hr>");
+            i = 6;
+            while(i>=1){
+                document.write("<h"+1+"/>Eu gosto de JavaScript</h"+1+">");
+            }
+            /*
+            for(let i=0; i<5; i++){ //laco de repetição / iteração
+                console.log(1);
+            }
+            for(let i=5; i<0; i--){ //laco de repetição / iteração
+                console.log(1);
+            }*/
+        }
+        
+    </script>
+</head>
+<body>
+    <button onclick="gerar()">Ver</button>
+</body>
+</html>

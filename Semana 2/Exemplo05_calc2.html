@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulação de uma calculadora com funções</title>
+</head>
+<script>
+    function calcular(op){
+        if(op=='+'){
+            f1.total.value = parseFloat(f1.num1.value) + parseFloat(f1.num2.value)
+        }
+        else if(op=='-'){
+            f1.total.value = parseFloat(f1.num1.value) - parseFloat(f1.num2.value)
+        }
+        else if(op=='*'){
+            f1.total.value = parseFloat(f1.num1.value) * parseFloat(f1.num2.value)
+        }
+        else if(op=='/'){
+            f1.total.value = parseFloat(f1.num1.value) / parseFloat(f1.num2.value)
+        }
+    }
+    /*
+    function somar(){
+        f1.total.value = parseFloat(f1num1.value) + parseFloat(f1.num2.value)
+    }
+    function subtrair(){
+        f1.total.value = parseFloat(f1num1.value) - parseFloat(f1.num2.value)
+    }
+    function multiplicar(){
+        f1.total.value = parseFloat(f1num1.value) * parseFloat(f1.num2.value)
+    }
+    function dividir(){
+        f1.total.value = parseFloat(f1num1.value) / parseFloat(f1.num2.value)
+    }*/
+</script>
+<body>
+    <form name="f1">
+        <table>
+            <tr><td>Número 1:</td><td><input type="number" name="num1" id="n1" size="s"></td></tr>
+            <tr><td>Número 2:</td><td><input type="number" name="num2" id="n2" size="s"></td></tr>
+            <tr><td>Total:</td><td><input type="number" name="total" id="t" size="s" readonly></td></tr>
+        </table>
+        <input type="reset" value="C" onclick="document.getElementById('n1').focus()">
+    </form>
+        
+        <button onclick="calcular('+')">+</button>
+        <button onclick="calcular('-')">-</button>
+        <button onclick="calcular('*')">*</button>
+        <button onclick="calcular('/')">/</button>

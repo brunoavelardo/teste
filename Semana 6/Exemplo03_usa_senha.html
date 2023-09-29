@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerando Uma Senha</title>
+    <link rel="stylesheet" href="Senha.js">
+    <script src="./Senha.js"></script>
+</head>
+<body>
+    Qtde de dígitos: <input type="number" id="qtde" min="5" max="10">
+    <button onclick="document.getElementById('senha').ineerHTML = 
+    gerarSenhaNumerica(document.getElementById('qtde').value)">Gerar</button>
+    <p id="senha"></p>
+</body>
+</html>

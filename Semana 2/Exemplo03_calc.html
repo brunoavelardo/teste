@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Simulação de uma calculadora simples</h2>
+    <form name="f1">
+        <table>
+        <tr><td>Número 1:</td> <td><input type="number" name="num1" id="n1"></td></tr>
+        <tr><td>Número 2:</td> <td><input type="number" name="num2" id="n2"></td></tr>
+        <tr><td>Total: <input type="number" name="total" readonly id="t"></td></tr>
+        </table>
+        <input type="reset" value="Limpar" onclick="document.getElementById('n1').focus()">
+    </form>
+    <button onclick="f1.total.value = parseInt(f1.num1.value) + parsenInt(f1.num2.value)">
+        +
+    </button>
+    <button onclick="document.getElementById('t').value =
+                     parseInt(document.getElementById('n1').value) -
+                     parseInt(document.getElementById('n2').value)">
+        -
+    </button>
+    <button onclick="document.getElementById('t').value =
+                     parseInt(document.getElementById('n1').value) -
+                     parseInt(document.getElementById('n2').value)">
+        -
+    </button>
+    <button onclick= "f1.total.value = parseInt(f1.num1.value) * parseInt(f1.num2.value)"> x </button>
+
+    <button onclick="document.getElementById('t').value= 
+                        parseInt(document.getElementById('n1').value) /
+                        parseInt(document.getElementById('n2').value) ">
+                        / 
+    </button>
+</body>
+</html>

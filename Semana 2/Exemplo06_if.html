@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valor por extenso</title>
+    <script>
+        function converter(){
+            let v = f.numero.value;
+            if(v==0){
+                s='Zero';
+            }
+            else if(v==1){
+                s='Um';
+            }
+            else if(v==2){
+                s='Dois';
+            }
+            else if(v==3){
+                s='Três';
+            }
+            else if(v==4){
+                s='Quatro';
+            }
+            else if(v==5){
+                s='Cinco';
+            }
+            else if(v==6){
+                s='Seis';
+            }
+            else if(v==7){
+                s='Sete';
+            }
+            else if(v==8){
+                s='Oito';
+            }
+            else if(v==9){
+                s='Nove';
+            }
+            f.texto.value=s;
+        }
+    </script>
+</head>
+<body>
+    <h2>Uso do if para conversão numérica</h2>
+    <form name="f">
+        <select name="numero" onchange="converter()">
+            <option selected value="esc">Escolha um número</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <input type="text" name="texto">
+    </form>
+</body>
+</html>

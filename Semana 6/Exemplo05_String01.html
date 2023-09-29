@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Strings</title>
+    <script>
+        let frase = "Hoje é Quinta-Feira,aula de \"JavaScript\"!!!";
+        function mostrar(){
+            
+            console.log("Texto original:",frase);
+            console.log("lowercase:",frase.toLowerCase());
+            console.log("uppercase:",frase.toUpperCase());
+            console.log("length:",frase.length);
+            console.log("trim:",frase.trim());
+            console.log("Slice:",frase.slice(14,25));
+            console.log("Substring:",frase.substring(14,25));
+            console.log("Replace:",frase.replace("JavaScript","PHP"));
+            console.log("Flag:",frase.replace(/a/g,"@")); //2021
+            
+            
+            for(let a =1; a<=100; a++){
+                let s = ""+a; //Casting int --> String
+                document.write(s.padStart(3,"0")+"<br>");
+            }
+            
+           let n = "7";
+           console.log(n.padStart(3,"0"));
+           console.log(n.padStart(3,"0"));
+        }
+    </script>
+</head>
+<body>
+    <button onclick="mostrar()">Mostrar</button>
+</body>
+</html>

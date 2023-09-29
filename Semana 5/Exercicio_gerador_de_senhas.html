@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gerar(){
+            let qtde = parseInt(f.quantidade.value)
+            let senha = parseInt(Math.random() * qtde);
+
+            for(let i=1; i<=qtde; i++){
+                while(qtde.includes(senha)){
+                        senha = parseInt(Math.random() * qtde)
+                    }
+                    qtde.push(senha);
+                }
+
+            }
+
+            document.getElementById("senha").value = ;
+    </script>
+</head>
+<body>
+    <form id="f">
+        Quantidade De Digitos <input type="number" name="quantidade" value=""><br>
+        <input type="button"  value="Gerar" onclick="gerar()"><br>
+        Senha:<br>
+        <textarea id="senha" rows="10" cols="40"></textarea><br>
+    </form>
+</body>
+</html>

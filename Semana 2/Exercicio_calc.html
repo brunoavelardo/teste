@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora com funções</title>
+    <script>
+        function calcular(){
+            let n1 = parseFloat(f1.num1.value);
+            let n2 = parseFloat(f1.num2.value);
+            let op = f1.op.value;
+            if(op=='+') f1.total.value = n1 + n2
+            else if(op=='-') f1.total.value = n1 - n2
+            else if(op=='*') f1.total.value = n1 * n2
+            else if(op=='/') f1.total.value = n1 / n2
+            else if(op=='xY') f1.total.value = n1 ** n2
+            else if(op=='and') f1.total.value = n1 & n2
+            else if(op=='or') f1.total.value = n1 | n2
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <table>
+            <tr><td>Número 1:</td><td><input type="number" name="num1" id="n1" size="S"></td></tr>
+            <tr><td>Número 2:</td><td><input type="number" name="num2" id="n2" size="S"></td></tr>
+            <tr><td>Total:</td><td><input type="number" name="total" id="t" size="s" readonly></td></tr>
+            <tr><td>Operação:</td></tr>
+                <select name="numero" onchange="converter()">
+                    <option selected value="esc">Escolha a operação</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="XY">XY</option>
+                    <option value="and">&</option>
+                    <option value="or">|</option>
+                </select>
+            </td></tr>
+        </table>
+        <input type="button" value="calcular" onclick="calcular()">
+        <input type="reset" value="Clear" onclick="Apagar">
+        </form>
+
+</body>
+</html>

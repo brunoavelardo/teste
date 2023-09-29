@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maior e menor dentre diversos valores</title>
+    <script>
+        function processar(){
+            let maior = parseInt f.n[0].value; // maior recebe o valor da primeira caixa
+            let menor = parseInt f.n[0].value; // menor recebe o valor da primeira caixa
+            // alert(f.n.length);
+            for(let i=1;i<f.n.length;i++){
+                //alert(f.n[i].value);
+                let x = parseInt(f.n[i].value); //valor atual da caixa de texto
+                if(x > maior) maior = x;
+                if(x < menor) menor = x;
+            }
+            f.saida_maior.value = maior;
+            f.saida_menor.value = menor;
+        }
+    </script>
+</head>
+<body>
+    <form name="f">
+        Valor de n1: <input type="number" name="n"><br>
+        Valor de n2: <input type="number" name="n"><br>
+        Valor de n3: <input type="number" name="n"><br>
+        Valor de n4: <input type="number" name="n"><br>
+        Valor de n5: <input type="number" name="n"><br>
+        Valor de n6: <input type="number" name="n"><br>
+        Valor de n7: <input type="number" name="n"><br>
+        Valor de n8: <input type="number" name="n"><br>
+        Valor de n9: <input type="number" name="n"><br>
+        Valor de n10: <input type="number" name="n"><br>
+        Maior: <input type="text" readonly name="saida_maior"><br>
+        Menor: <input type="text" readonly name="saida_menor"><br>
+        <input type="button" value="Processar" onclick="processar()">
+    </form>
+
+    <button onclick="processar()">Processar</button><br><br>
+</body>
+</html>

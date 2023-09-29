@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <script>
+        function ordenar(){
+            let a = parseFloat(f.e1.value)
+            let b = parseFloat(f.e2.value) 
+            if (a>b) {
+                f.saida1.value = b;//menor
+                f.saida2.value = a;//maior
+            }
+            else{ //(b>a)
+                f.saida1.value = a;
+                f.saida2.value = b;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f">
+        valor de n1: <input type="text" name = "e1"><br>
+        valor de n2: <input type="text" name = "e2"><br>
+        <input type="button" value="Ordenar" onclick="ordenar()"><br><br>
+        Saída Prdenada:<br>
+        <input type="text" readonly name="saida1"><br>
+        <input type="text" readonly name="saida2">
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulação de um teclado</title>
+</head>
+<body>
+    <form name="f1">
+        valor: <input type="number" name="valor" readonly id="v">
+        <input type="reset" value="C" onclick="document.getElementById('v').focus()">
+    </form>
+    <button onclick="document.getElementById('v').value += parseInt('1')">1</button>
+    <button onclick="document.getElementById('v').value += parseInt('2')">2</button>
+    <button onclick="document.getElementById('v').value += parseInt('3')">3</button>
+    <button onclick="document.getElementById('v').value += parseInt('4')">4</button>
+    <button onclick="document.getElementById('v').value += parseInt('5')">5</button>
+    <button onclick="document.getElementById('v').value += parseInt('6')">6</button>
+    <button onclick="document.getElementById('v').value += parseInt('7')">7</button>
+    <button onclick="document.getElementById('v').value += parseInt('8')">8</button>
+    <button onclick="document.getElementById('v').value += parseInt('9')">9</button>
+    <button onclick="document.getElementById('v').value += parseInt('0')">0</button>
+</body>
+</html>

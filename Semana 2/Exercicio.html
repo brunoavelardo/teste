@@ -1,0 +1,39 @@
+<script>
+    function calcular(){
+        let num1 = parseFloat(f1.num1.value);
+        let num2 = parseFloat (f1.num2.value);
+        let t = f1.total.value- "";
+    let v- f1.operador.value;
+    if(v=='+') t = nun1+nu-2;
+    else if(v=='-') t = numi-num2;
+    else if(v=='e') t = numl"num2;
+    else if(v=-'/') t = num1/num2;
+    else if(v=='s:') t = numl**num2;
+    else if(v=='&') t - numl&num2;
+    else if(v--'|") t - num1|num2;
+    f1.total.value = t;
+    function 1impar()(
+    f1.numi.value='';
+    f1.num2.value=
+    f1.total.value-
+    </script>
+    </head>
+    <body>
+    <form action="" name="f1">
+    <table>
+    <tr><td>primeiro valor:</td><td><input type="number" name="numl"></td></tr>
+    <tr><td>Segundo valor:</td> <td><input type="number" name-"num?"></tdx</tr>
+    <tr><td>Resultado:</td> <td><input type="number" readonly name="total"></td></tr>
+    </table>
+    <select nare="operador">
+    <option value-"+">+</button>
+    <option value="-">-</button>
+    <option value-" ".">*</button>
+    <option value="/">/</button>
+    <option value-"ss">**</button>
+    <option value="&">&</button>
+    <option value-"|">|</button>
+    </select>
+    </form>
+    <button onclick="calcular()">Calc</button>
+    <button onclíck="limpar()">Limpar</button>

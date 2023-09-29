@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lendo todos os campos de um formulário</title>
+    <script>
+        function validar(){
+            if(f.v1.value.length == 0){ //caixa vazia
+                alert("preencha o campo v1");
+            }
+            else if(f.v2.value.length == 0){
+                alert("preencha o campo v2");
+            }
+            else if(f.v3.value.length == 0){
+                alert("preencha o campo v3");
+            }
+            else if(f.v4.value.length == 0){
+                alert("preencha o campo v4");
+            }
+            else if(f.v5.value.length == 0){
+                alert("preencha o campo v5");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="f">
+        Valor1: <input type="text" name="v1"><br>
+        Valor2: <input type="text" name="v2"><br>
+        Valor3: <input type="text" name="v3"><br>
+        Valor4: <input type="text" name="v4"><br>
+        Valor5: <input type="text" name="v5"><br>
+        <input type="button"  value="Validar" onclick="validar()">
+    </form>
+</body>
+</html>
